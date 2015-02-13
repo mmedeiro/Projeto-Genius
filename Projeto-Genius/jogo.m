@@ -86,13 +86,19 @@
     NSLog(@"Atenção, digite a sequência de cores em número para jogar. /n 1- Vermelho /n 2- Verde /n 3- Amarelo /n 4- Azul");
     
     BOOL vencer = true;
-    while (vencer)
-    {
+    
+    do {
         [g mostrarCores ];
-        [g lerCores];
-        g.nivel++;
-        NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel );
-    }
+        if ([g lerCores]) {
+            NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel);
+            g.nivel++;
+        } else {
+            vencer = false;
+            NSLog(@"Você perdeu!");
+            [self ranking];
+        }
+    } while (vencer);
+    
 }
 
 -(void) ranking{

@@ -22,7 +22,7 @@
 
 
 
-@synthesize nivel, armazenarCores,perdeu;
+@synthesize nivel, armazenarCores;
 
 
 
@@ -62,29 +62,47 @@
     
 }
 
-
-
--(void) lerCores{
+-(BOOL) lerCores{
     NSNumber *numero = armazenarCores[0];
     int entrada;
     for(int i = 0; i < [armazenarCores count]; i++)
     {
-     NSLog(@"Digite a combinação correta %i/%i: ",i,nivel+3);
-     scanf("%i",&entrada);
-     numero = armazenarCores[i];
-     if([numero isEqual:[NSNumber numberWithInt:entrada]])
-     {
-      continue;
-     }
-     else
-     {
-      NSLog(@"Você perdeu!");
-         perdeu = true;
-         return;
-     }
-     
+        NSLog(@"Digite a combinação correta %i/%i: ",i,nivel+3);
+        scanf("%i",&entrada);
+        numero = armazenarCores[i];
+        if([numero isEqual:[NSNumber numberWithInt:entrada]])
+        {
+            return true;
+        }
+        else
+        {
+            return false;;
+        }
+        
     }
 }
+
+//-(void) lerCores{
+//    NSNumber *numero = armazenarCores[0];
+//    int entrada;
+//    for(int i = 0; i < [armazenarCores count]; i++)
+//    {
+//     NSLog(@"Digite a combinação correta %i/%i: ",i,nivel+3);
+//     scanf("%i",&entrada);
+//     numero = armazenarCores[i];
+//     if([numero isEqual:[NSNumber numberWithInt:entrada]])
+//     {
+//      continue;
+//     }
+//     else
+//     {
+//      NSLog(@"Você perdeu!");
+//         perdeu = true;
+//         return;
+//     }
+//     
+//    }
+//}
 
 
 
