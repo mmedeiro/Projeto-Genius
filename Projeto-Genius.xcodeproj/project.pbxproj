@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BDDBC5B1A8E852E00C27352 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDBC5A1A8E852E00C27352 /* main.m */; };
-		4BDDBC661A8E85B600C27352 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDBC651A8E85B600C27352 /* Jogador.m */; };
-		4BDDBC691A8E85DF00C27352 /* jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDBC681A8E85DF00C27352 /* jogo.m */; };
-		4BDDBC6C1A8E861200C27352 /* genius.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDBC6B1A8E861200C27352 /* genius.m */; };
+		4BC4D5261A8E88D500F7D3F0 /* genius.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4D5201A8E88D500F7D3F0 /* genius.m */; };
+		4BC4D5271A8E88D500F7D3F0 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4D5221A8E88D500F7D3F0 /* Jogador.m */; };
+		4BC4D5281A8E88D500F7D3F0 /* jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4D5241A8E88D500F7D3F0 /* jogo.m */; };
+		4BC4D5291A8E88D500F7D3F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4D5251A8E88D500F7D3F0 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,14 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4BC4D51F1A8E88D500F7D3F0 /* genius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genius.h; sourceTree = "<group>"; };
+		4BC4D5201A8E88D500F7D3F0 /* genius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = genius.m; sourceTree = "<group>"; };
+		4BC4D5211A8E88D500F7D3F0 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		4BC4D5221A8E88D500F7D3F0 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		4BC4D5231A8E88D500F7D3F0 /* jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogo.h; sourceTree = "<group>"; };
+		4BC4D5241A8E88D500F7D3F0 /* jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogo.m; sourceTree = "<group>"; };
+		4BC4D5251A8E88D500F7D3F0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BDDBC571A8E852E00C27352 /* Projeto-Genius */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projeto-Genius"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BDDBC5A1A8E852E00C27352 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4BDDBC641A8E85B600C27352 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
-		4BDDBC651A8E85B600C27352 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
-		4BDDBC671A8E85DF00C27352 /* jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogo.h; sourceTree = "<group>"; };
-		4BDDBC681A8E85DF00C27352 /* jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogo.m; sourceTree = "<group>"; };
-		4BDDBC6A1A8E861200C27352 /* genius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genius.h; sourceTree = "<group>"; };
-		4BDDBC6B1A8E861200C27352 /* genius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = genius.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +66,13 @@
 		4BDDBC591A8E852E00C27352 /* Projeto-Genius */ = {
 			isa = PBXGroup;
 			children = (
-				4BDDBC5A1A8E852E00C27352 /* main.m */,
-				4BDDBC641A8E85B600C27352 /* Jogador.h */,
-				4BDDBC6A1A8E861200C27352 /* genius.h */,
-				4BDDBC6B1A8E861200C27352 /* genius.m */,
-				4BDDBC671A8E85DF00C27352 /* jogo.h */,
-				4BDDBC681A8E85DF00C27352 /* jogo.m */,
-				4BDDBC651A8E85B600C27352 /* Jogador.m */,
+				4BC4D51F1A8E88D500F7D3F0 /* genius.h */,
+				4BC4D5201A8E88D500F7D3F0 /* genius.m */,
+				4BC4D5211A8E88D500F7D3F0 /* Jogador.h */,
+				4BC4D5221A8E88D500F7D3F0 /* Jogador.m */,
+				4BC4D5231A8E88D500F7D3F0 /* jogo.h */,
+				4BC4D5241A8E88D500F7D3F0 /* jogo.m */,
+				4BC4D5251A8E88D500F7D3F0 /* main.m */,
 			);
 			path = "Projeto-Genius";
 			sourceTree = "<group>";
@@ -133,10 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BDDBC661A8E85B600C27352 /* Jogador.m in Sources */,
-				4BDDBC5B1A8E852E00C27352 /* main.m in Sources */,
-				4BDDBC6C1A8E861200C27352 /* genius.m in Sources */,
-				4BDDBC691A8E85DF00C27352 /* jogo.m in Sources */,
+				4BC4D5271A8E88D500F7D3F0 /* Jogador.m in Sources */,
+				4BC4D5261A8E88D500F7D3F0 /* genius.m in Sources */,
+				4BC4D5291A8E88D500F7D3F0 /* main.m in Sources */,
+				4BC4D5281A8E88D500F7D3F0 /* jogo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +250,7 @@
 				4BDDBC601A8E852E00C27352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
