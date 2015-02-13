@@ -15,7 +15,7 @@
 
 
 #import "Genius.h"
-
+#import <stdlib.h>
 
 
 @implementation Genius
@@ -29,7 +29,11 @@
 
 
 -(void) mostrarCores{
-    
+    for (int r=0;r<nivel+3; r++) {
+        NSNumber *cores = [ NSNumber numberWithInt: arc4random_uniform(3)];
+        [armazenarCores addObject: cores];
+    }
+
     
     
 }
@@ -37,8 +41,7 @@
 
 
 -(void) lerCores{
-    
-    
+    NSLog(@"Digite a combinação correta: ");
     
 }
 
