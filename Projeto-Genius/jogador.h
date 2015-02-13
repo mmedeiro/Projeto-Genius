@@ -15,13 +15,16 @@
     NSString *nomeJogador;
     NSString *senha;
     int pontuacao;
-    int quantidadeDeJogos;
+    int qtdJogos;
 }
 
 @property int codigo, pontuacao, quantidadeDeJogos;
 @property NSString *nomeJogador;
 @property NSString *senha;
 
--(instancetype) initWithJogador:(NSString *)nome senha:(NSString *)fSenha;
+-(id) init;
+-(id) initWithCodigo:(int)newCodigo nomeJogador:(NSString*)newNome senha:(NSString*)newSenha;
+
+
 
 @end

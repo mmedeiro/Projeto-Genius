@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4BC4D5261A8E88D500F7D3F0 /* genius.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4D5201A8E88D500F7D3F0 /* genius.m */; };
-		4BC4D5271A8E88D500F7D3F0 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4D5221A8E88D500F7D3F0 /* Jogador.m */; };
+		4BC4D5271A8E88D500F7D3F0 /* jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4D5221A8E88D500F7D3F0 /* jogador.m */; };
 		4BC4D5281A8E88D500F7D3F0 /* jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4D5241A8E88D500F7D3F0 /* jogo.m */; };
 		4BC4D5291A8E88D500F7D3F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC4D5251A8E88D500F7D3F0 /* main.m */; };
+		7E95863D1A8EA1B900E2C509 /* fila.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E95863C1A8EA1B900E2C509 /* fila.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,12 +29,14 @@
 /* Begin PBXFileReference section */
 		4BC4D51F1A8E88D500F7D3F0 /* genius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genius.h; sourceTree = "<group>"; };
 		4BC4D5201A8E88D500F7D3F0 /* genius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = genius.m; sourceTree = "<group>"; };
-		4BC4D5211A8E88D500F7D3F0 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
-		4BC4D5221A8E88D500F7D3F0 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		4BC4D5211A8E88D500F7D3F0 /* jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogador.h; sourceTree = "<group>"; };
+		4BC4D5221A8E88D500F7D3F0 /* jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogador.m; sourceTree = "<group>"; };
 		4BC4D5231A8E88D500F7D3F0 /* jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogo.h; sourceTree = "<group>"; };
 		4BC4D5241A8E88D500F7D3F0 /* jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogo.m; sourceTree = "<group>"; };
 		4BC4D5251A8E88D500F7D3F0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BDDBC571A8E852E00C27352 /* Projeto-Genius */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projeto-Genius"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E95863B1A8EA1B900E2C509 /* fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fila.h; sourceTree = "<group>"; };
+		7E95863C1A8EA1B900E2C509 /* fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fila.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +69,15 @@
 		4BDDBC591A8E852E00C27352 /* Projeto-Genius */ = {
 			isa = PBXGroup;
 			children = (
+				4BC4D5251A8E88D500F7D3F0 /* main.m */,
 				4BC4D51F1A8E88D500F7D3F0 /* genius.h */,
 				4BC4D5201A8E88D500F7D3F0 /* genius.m */,
-				4BC4D5211A8E88D500F7D3F0 /* Jogador.h */,
-				4BC4D5221A8E88D500F7D3F0 /* Jogador.m */,
+				4BC4D5211A8E88D500F7D3F0 /* jogador.h */,
+				4BC4D5221A8E88D500F7D3F0 /* jogador.m */,
 				4BC4D5231A8E88D500F7D3F0 /* jogo.h */,
 				4BC4D5241A8E88D500F7D3F0 /* jogo.m */,
-				4BC4D5251A8E88D500F7D3F0 /* main.m */,
+				7E95863B1A8EA1B900E2C509 /* fila.h */,
+				7E95863C1A8EA1B900E2C509 /* fila.m */,
 			);
 			path = "Projeto-Genius";
 			sourceTree = "<group>";
@@ -133,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC4D5271A8E88D500F7D3F0 /* Jogador.m in Sources */,
+				7E95863D1A8EA1B900E2C509 /* fila.m in Sources */,
+				4BC4D5271A8E88D500F7D3F0 /* jogador.m in Sources */,
 				4BC4D5261A8E88D500F7D3F0 /* genius.m in Sources */,
 				4BC4D5291A8E88D500F7D3F0 /* main.m in Sources */,
 				4BC4D5281A8E88D500F7D3F0 /* jogo.m in Sources */,

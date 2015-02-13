@@ -94,13 +94,24 @@
     }
 }
 
-
- 
-
 -(void) ranking{
-    
+    if ([fila count] == 0) {
+        return;
+    }
+    NSMutableArray *unsortedJ = [[NSMutableArray alloc] initWithArray:fila];
+    Jogador *aux;
+    for (int i=0; i<[fila count]; i++) {
+        aux = [unsortedJ objectAtIndex:0];
+        NSUInteger count = [unsortedJ count];
+        for (int j=0; j<count; j++) {
+            if ([[unsortedJ objectAtIndex:j] pontuacao] >= [aux pontuacao]) {
+                aux = [unsortedJ objectAtIndex:j];
+            }
+        }
+        NSLog(@"%i - Nome: %@ Pontos: %i", i+1, [aux nomeJogador], [aux pontuacao]);
+        [unsortedJ removeObject:aux];
+    }
 }
-
 
 -(void) janelas{
     

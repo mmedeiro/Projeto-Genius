@@ -12,11 +12,15 @@
 
 @synthesize codigo, pontuacao, quantidadeDeJogos, nomeJogador, senha;
 
--(instancetype) initWithJogador:(NSString *)nome senha:(NSString *)fSenha
-{
+-(id) init {
+    return self;
+}
+
+-(id) initWithCodigo:(int)newCodigo nomeJogador:(NSString*)newNome senha:(NSString*)newSenha {
     self = [super init];
-    nomeJogador = nome;
-    senha=fSenha;
+    codigo = newCodigo;
+    nomeJogador = newNome;
+    senha = newSenha;
     return self;
 }
 
