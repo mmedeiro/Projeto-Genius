@@ -20,16 +20,7 @@
 
 @implementation Jogador
 
-
-
 @synthesize codigo, pontuacao, quantidadeDeJogos, nomeJogador, senha;
-
-
-
-
-
-
-
 
 
 @end
