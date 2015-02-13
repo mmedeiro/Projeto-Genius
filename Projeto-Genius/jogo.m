@@ -86,7 +86,8 @@
     NSLog(@"Atenção, digite a sequência de cores em número para jogar. /n 1- Vermelho /n 2- Verde /n 3- Amarelo /n 4- Azul");
     
     BOOL vencer = true;
-    while (vencer) {
+    while (vencer)
+    {
         mostrarCores();
         lerCores();
         g.nivel++;

@@ -21,7 +21,6 @@
 {
     
     int nivel;
-    
     NSMutableArray *armazenarCores;
     
 }
@@ -30,6 +29,7 @@
 
 @property int nivel;
 @property NSMutableArray *armazenarCores;
+@property BOOL perdeu;
 
 -(void) mostrarCores;
 -(void) lerCores;
