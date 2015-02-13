@@ -88,8 +88,8 @@
     BOOL vencer = true;
     while (vencer)
     {
-        mostrarCores();
-        lerCores();
+        [g mostrarCores ];
+        [g lerCores];
         g.nivel++;
         NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel );
     }

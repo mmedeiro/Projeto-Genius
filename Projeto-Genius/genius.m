@@ -36,10 +36,26 @@
         NSTimer *timer = [[NSTimer alloc] init];
     }
     
-    BOOL mostrando = true;
-    while(mostrando)
+    NSNumber *numero;
+    for(int i = 0; i < [armazenarCores count]; i++)
     {
-     
+        numero = [armazenarCores objectAtIndex:i];
+        int number = [numero intValue];
+        switch(number)
+        {
+            case 0:
+                NSLog(@"Vermelho");
+            
+            case 1:
+                NSLog(@"Verde");
+            case 2:
+                NSLog(@"Amarelo");
+            case 3:
+                NSLog(@"Azul");
+        }
+        
+        usleep(1000000);
+        
     }
 
     
