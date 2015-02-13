@@ -48,16 +48,22 @@
         {
             case 0:
                 NSLog(@"Vermelho");
+                break;
             
             case 1:
                 NSLog(@"Verde");
+                break;
+                
             case 2:
                 NSLog(@"Amarelo");
+                break;
+                
             case 3:
                 NSLog(@"Azul");
+                break;
         }
         
-        usleep(1000000);
+        usleep(2000000);
         
     }
 
@@ -75,13 +81,15 @@
         numero = armazenarCores[i];
         if([numero isEqual:[NSNumber numberWithInt:entrada]])
         {
-            return true;
+            NSLog(@"Acertou!");
+            continue;
         }
         else
         {
             return false;;
         }
     }
+    return true;
 }
 
 
