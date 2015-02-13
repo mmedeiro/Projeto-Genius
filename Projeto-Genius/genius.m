@@ -22,7 +22,7 @@
 
 
 
-@synthesize nivel, armazenarCores,perdeu;
+@synthesize nivel, armazenarCores;
 
 
 
@@ -30,16 +30,13 @@
 {
     nivel = 0;
     armazenarCores = [[NSMutableArray alloc] init];
-    perdeu = false;
     return self;
 }
 
 -(void) mostrarCores{
-    perdeu = false;
     for (int r=0;r<nivel+3; r++) {
         NSNumber *cores = [ NSNumber numberWithInt: arc4random_uniform(3)];
         [armazenarCores addObject: cores];
-        NSTimer *timer = [[NSTimer alloc] init];
     }
     
     NSNumber *numero;
@@ -68,29 +65,22 @@
     
 }
 
-
-
--(void) lerCores{
+-(BOOL) lerCores{
     NSNumber *numero = armazenarCores[0];
     int entrada;
     for(int i = 0; i < [armazenarCores count]; i++)
     {
-     NSLog(@"Digite a combinação correta %i/%i: ",i,nivel+3);
-     scanf("%i",&entrada);
-     numero = armazenarCores[i];
-     if([numero isEqual:[NSNumber numberWithInt:entrada]])
-     {
-      continue;
-         NSLog(@"Você acertou!");
-         
-     }
-     else
-     {
-      NSLog(@"Você perdeu!");
-         perdeu = true;
-         return;
-     }
-     
+        NSLog(@"Digite a combinação correta %i/%i: ",i,nivel+3);
+        scanf("%i",&entrada);
+        numero = armazenarCores[i];
+        if([numero isEqual:[NSNumber numberWithInt:entrada]])
+        {
+            return true;
+        }
+        else
+        {
+            return false;;
+        }
     }
 }
 

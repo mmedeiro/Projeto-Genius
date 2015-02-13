@@ -79,26 +79,27 @@
                 }
             }
         }
-     
-        NSLog(@"Atenção, digite a sequência de cores em número para jogar. /n 1- Vermelho /n 2- Verde /n 3- Amarelo /n 4- Azul");
+        
+        NSLog(@"Atenção, digite a sequência de cores em número para jogar. \n 1- Vermelho \n 2- Verde \n 3- Amarelo \n 4- Azul");
         
         BOOL vencer = true;
-        while (vencer)
-        {
-            [g mostrarCores];
-            [g lerCores];
-            if(g.perdeu)
-            {
+        
+        do {
+            [g mostrarCores ];
+            if ([g lerCores]) {
+                NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel);
+                g.nivel++;
+            } else {
                 vencer = false;
+                NSLog(@"Você perdeu!");
+                [self ranking];
             }
-            else
-            {
-             NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel );
-             g.nivel++;
-            }
-        }
+        } while (vencer);
+        
     }
     
+    
+   
 }
 
 -(void) ranking{

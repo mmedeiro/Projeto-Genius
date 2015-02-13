@@ -21,11 +21,10 @@
 
 @property int nivel;
 @property NSMutableArray *armazenarCores;
-@property BOOL perdeu;
 
 -(instancetype) init;
 -(void) mostrarCores;
--(void) lerCores;
+-(BOOL) lerCores;
 
 @end
 
