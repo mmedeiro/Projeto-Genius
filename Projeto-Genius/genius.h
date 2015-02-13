@@ -13,14 +13,7 @@
 //
 
 
-
 #import <Foundation/Foundation.h>
-
-
-
-
-
-
 
 @interface Genius : NSObject
 
@@ -30,23 +23,15 @@
     
     NSMutableArray *armazenarCores;
     
-    
-    
 }
 
 
 
 @property int nivel;
-
 @property NSMutableArray *armazenarCores;
 
-
-
 -(void) mostrarCores;
-
 -(void) lerCores;
-
-
 
 @end
 
