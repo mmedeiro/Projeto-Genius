@@ -22,7 +22,6 @@
 @property NSString *nomeJogador;
 @property NSString *senha;
 
--(id) init;
 -(id) initWithCodigo:(int)newCodigo nomeJogador:(NSString*)newNome senha:(NSString*)newSenha;
 
 

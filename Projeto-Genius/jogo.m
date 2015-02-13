@@ -46,7 +46,7 @@
                 scanf("%39s",nome);
                 NSString *fSenha = [NSString stringWithFormat:@"%s",nome];
                 Jogador *novoJogador;
-                novoJogador = [[Jogador alloc] initWithJogador:fNome senha:fSenha];
+                novoJogador = [[Jogador alloc] initWithCodigo:0 nomeJogador:fNome senha:fSenha];
                 [fila addObject:novoJogador];
                 NSLog(@"Login criado com sucesso.");
             }
