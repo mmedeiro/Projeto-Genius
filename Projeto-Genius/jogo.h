@@ -20,6 +20,8 @@
 @property  Genius *g;
 @property NSMutableArray *fila;
 
+-(instancetype) initJogo;
+-(void) Update;
 -(void) ranking;
 -(void) janelas;
 
