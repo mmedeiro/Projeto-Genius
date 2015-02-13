@@ -17,7 +17,6 @@
 #import "Jogador.h"
 
 
-
 @implementation Jogador
 
 @synthesize codigo, pontuacao, quantidadeDeJogos, nomeJogador, senha;

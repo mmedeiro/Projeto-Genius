@@ -18,8 +18,6 @@
 
 
 
-
-
 @interface Jogador : NSObject
 
 {
@@ -43,14 +41,6 @@
 @property NSString *nomeJogador;
 
 @property NSString *senha;
-
-
-
-
-
-
-
-
 
 
 

@@ -15,6 +15,11 @@
 
 #import <Foundation/Foundation.h>
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 @interface Genius : NSObject
 
 {
