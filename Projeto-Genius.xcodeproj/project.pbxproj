@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BDDBC5B1A8E852E00C27352 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDBC5A1A8E852E00C27352 /* main.m */; };
+		4BDDBC661A8E85B600C27352 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDBC651A8E85B600C27352 /* Jogador.m */; };
+		4BDDBC691A8E85DF00C27352 /* jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDBC681A8E85DF00C27352 /* jogo.m */; };
+		4BDDBC6C1A8E861200C27352 /* genius.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDBC6B1A8E861200C27352 /* genius.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4BDDBC551A8E852E00C27352 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4BDDBC571A8E852E00C27352 /* Projeto-Genius */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projeto-Genius"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BDDBC5A1A8E852E00C27352 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BDDBC641A8E85B600C27352 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		4BDDBC651A8E85B600C27352 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		4BDDBC671A8E85DF00C27352 /* jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogo.h; sourceTree = "<group>"; };
+		4BDDBC681A8E85DF00C27352 /* jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jogo.m; sourceTree = "<group>"; };
+		4BDDBC6A1A8E861200C27352 /* genius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genius.h; sourceTree = "<group>"; };
+		4BDDBC6B1A8E861200C27352 /* genius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = genius.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BDDBC541A8E852E00C27352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BDDBC4E1A8E852E00C27352 = {
+			isa = PBXGroup;
+			children = (
+				4BDDBC591A8E852E00C27352 /* Projeto-Genius */,
+				4BDDBC581A8E852E00C27352 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BDDBC581A8E852E00C27352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BDDBC571A8E852E00C27352 /* Projeto-Genius */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BDDBC591A8E852E00C27352 /* Projeto-Genius */ = {
+			isa = PBXGroup;
+			children = (
+				4BDDBC5A1A8E852E00C27352 /* main.m */,
+				4BDDBC641A8E85B600C27352 /* Jogador.h */,
+				4BDDBC6A1A8E861200C27352 /* genius.h */,
+				4BDDBC6B1A8E861200C27352 /* genius.m */,
+				4BDDBC671A8E85DF00C27352 /* jogo.h */,
+				4BDDBC681A8E85DF00C27352 /* jogo.m */,
+				4BDDBC651A8E85B600C27352 /* Jogador.m */,
+			);
+			path = "Projeto-Genius";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BDDBC561A8E852E00C27352 /* Projeto-Genius */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BDDBC5E1A8E852E00C27352 /* Build configuration list for PBXNativeTarget "Projeto-Genius" */;
+			buildPhases = (
+				4BDDBC531A8E852E00C27352 /* Sources */,
+				4BDDBC541A8E852E00C27352 /* Frameworks */,
+				4BDDBC551A8E852E00C27352 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Projeto-Genius";
+			productName = "Projeto-Genius";
+			productReference = 4BDDBC571A8E852E00C27352 /* Projeto-Genius */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BDDBC4F1A8E852E00C27352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mariana Medeiro";
+				TargetAttributes = {
+					4BDDBC561A8E852E00C27352 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 4BDDBC521A8E852E00C27352 /* Build configuration list for PBXProject "Projeto-Genius" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4BDDBC4E1A8E852E00C27352;
+			productRefGroup = 4BDDBC581A8E852E00C27352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BDDBC561A8E852E00C27352 /* Projeto-Genius */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BDDBC531A8E852E00C27352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDDBC661A8E85B600C27352 /* Jogador.m in Sources */,
+				4BDDBC5B1A8E852E00C27352 /* main.m in Sources */,
+				4BDDBC6C1A8E861200C27352 /* genius.m in Sources */,
+				4BDDBC691A8E85DF00C27352 /* jogo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4BDDBC5C1A8E852E00C27352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4BDDBC5D1A8E852E00C27352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4BDDBC5F1A8E852E00C27352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4BDDBC601A8E852E00C27352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BDDBC521A8E852E00C27352 /* Build configuration list for PBXProject "Projeto-Genius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDDBC5C1A8E852E00C27352 /* Debug */,
+				4BDDBC5D1A8E852E00C27352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BDDBC5E1A8E852E00C27352 /* Build configuration list for PBXNativeTarget "Projeto-Genius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDDBC5F1A8E852E00C27352 /* Debug */,
+				4BDDBC601A8E852E00C27352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BDDBC4F1A8E852E00C27352 /* Project object */;
+}
