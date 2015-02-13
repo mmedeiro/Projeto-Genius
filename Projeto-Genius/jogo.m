@@ -16,8 +16,6 @@
 -(instancetype) initJogo
 {
     self = [super self];
-    g = [[Genius alloc] init];
-    fila = [[NSMutableArray alloc] init];
     return self;
 }
 
@@ -27,7 +25,8 @@
     int entrada1 = 0;
     
     char nome[40];
-    
+    fila = [[NSMutableArray alloc] init];
+    g = [[Genius alloc] init];
     
     while (jogoRodando)
     {
@@ -52,16 +51,18 @@
             }
             else
             {
-                NSLog(@"Digite seu nome");
+                NSLog(@"Digite seu nome para o login");
                 scanf("%39s",nome);
                 NSString *fNome = [NSString stringWithFormat:@"%s",nome];
-                NSLog(@"Digite sua senha");
+                NSLog(@"Digite sua senha para o login");
                 scanf("%39s",nome);
                 NSString *fSenha = [NSString stringWithFormat:@"%s",nome];
                 
                 Jogador *jogador;
+                NSLog(@"Teste %lu",[fila count]);
                 for(int i = 0; i < [fila count]; i++)
                 {
+                    
                     jogador = [fila objectAtIndex:i];
                     if([jogador nomeJogador] == fNome)
                     {
@@ -72,27 +73,32 @@
                         }
                     }
                 }
-                if(menu)
+                if(menu == true)
                 {
                     NSLog(@"Dados errados.");
                 }
             }
-            
-            jogoRodando = false;
         }
+     
+        NSLog(@"Atenção, digite a sequência de cores em número para jogar. /n 1- Vermelho /n 2- Verde /n 3- Amarelo /n 4- Azul");
         
+        BOOL vencer = true;
+        while (vencer)
+        {
+            [g mostrarCores];
+            [g lerCores];
+            if(g.perdeu)
+            {
+                vencer = false;
+            }
+            else
+            {
+             NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel );
+             g.nivel++;
+            }
+        }
     }
     
-    NSLog(@"Atenção, digite a sequência de cores em número para jogar. /n 1- Vermelho /n 2- Verde /n 3- Amarelo /n 4- Azul");
-    
-    BOOL vencer = true;
-    while (vencer)
-    {
-        [g mostrarCores ];
-        [g lerCores];
-        g.nivel++;
-        NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel );
-    }
 }
 
 -(void) ranking{

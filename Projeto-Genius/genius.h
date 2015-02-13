@@ -1,4 +1,3 @@
-@@ -1,37 +0,0 @@
 //
 
 //  Genius.h
@@ -18,19 +17,13 @@
 
 @interface Genius : NSObject
 
-{
-    
-    int nivel;
-    NSMutableArray *armazenarCores;
-    
-}
-
 
 
 @property int nivel;
 @property NSMutableArray *armazenarCores;
 @property BOOL perdeu;
 
+-(instancetype) init;
 -(void) mostrarCores;
 -(void) lerCores;
 

@@ -12,9 +12,6 @@
 
 @interface Jogo : NSObject
 {
-    Genius *g;
-    NSMutableArray *fila;
-    
 }
 
 @property  Genius *g;

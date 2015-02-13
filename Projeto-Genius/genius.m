@@ -26,7 +26,13 @@
 
 
 
-
+-(instancetype) init
+{
+    nivel = 0;
+    armazenarCores = [[NSMutableArray alloc] init];
+    perdeu = false;
+    return self;
+}
 
 -(void) mostrarCores{
     perdeu = false;
@@ -75,6 +81,8 @@
      if([numero isEqual:[NSNumber numberWithInt:entrada]])
      {
       continue;
+         NSLog(@"Você acertou!");
+         
      }
      else
      {
