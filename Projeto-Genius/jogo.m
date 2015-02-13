@@ -8,6 +8,8 @@
 
 #import "Jogo.h"
 
+
+
 @implementation Jogo
 
 @synthesize g, fila;
@@ -78,6 +80,13 @@
             
             jogoRodando = false;
         }
+        
+    }
+    BOOL vencer = true;
+    while (vencer) {
+        mostrarCores();
+        lerCores();
+        g.nivel++;
         
     }
 }
