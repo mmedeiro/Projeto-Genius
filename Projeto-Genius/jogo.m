@@ -90,7 +90,7 @@
         mostrarCores();
         lerCores();
         g.nivel++;
-        
+        NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel );
     }
 }
 
