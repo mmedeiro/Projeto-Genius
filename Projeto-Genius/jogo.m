@@ -12,7 +12,7 @@
 
 @implementation Jogo
 
-@synthesize g, fila;
+@synthesize g, fila,jogadorAtual;
 -(instancetype) initJogo
 {
     self = [super self];
@@ -69,6 +69,8 @@
                         if([jogador senha] == fSenha)
                         {
                             NSLog(@"Login feito com sucesso.");
+                            jogadorAtual = jogador;
+                            jogadorAtual.pontuacao = 0;
                             menu = false;
                         }
                     }
@@ -87,12 +89,17 @@
         do {
             [g mostrarCores ];
             if ([g lerCores]) {
-                NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel);
                 g.nivel++;
+                NSLog(@"Parabéns, você passou de nível!! Nível atual: %i", g.nivel);
+                jogadorAtual.pontuacao += 10;
+                usleep(4000000);
             } else {
                 vencer = false;
                 NSLog(@"Você perdeu!");
+                usleep(4000000);
                 [self ranking];
+                usleep(4000000);
+                [g limpar];
             }
         } while (vencer);
         

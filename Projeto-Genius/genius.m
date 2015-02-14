@@ -33,8 +33,24 @@
     return self;
 }
 
+-(void) limpar
+{
+    armazenarCores = [[NSMutableArray alloc] init];
+    nivel = 0;
+}
+
 -(void) mostrarCores{
-    for (int r=0;r<nivel+3; r++) {
+    
+    if([armazenarCores count] < 1)
+    {
+     for (int r=0;r<nivel+3; r++)
+     {
+        NSNumber *cores = [ NSNumber numberWithInt: arc4random_uniform(3)];
+        [armazenarCores addObject: cores];
+     }
+    }
+    else
+    {
         NSNumber *cores = [ NSNumber numberWithInt: arc4random_uniform(3)];
         [armazenarCores addObject: cores];
     }
@@ -44,6 +60,7 @@
     {
         numero = [armazenarCores objectAtIndex:i];
         int number = [numero intValue];
+        NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         switch(number)
         {
             case 0:
@@ -66,7 +83,7 @@
         usleep(2000000);
         
     }
-
+    NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     
     
 }
@@ -76,10 +93,10 @@
     int entrada;
     for(int i = 0; i < [armazenarCores count]; i++)
     {
-        NSLog(@"Digite a combinação correta %i/%i: ",i,nivel+3);
+        NSLog(@"Digite a combinação correta %i/%i: \n 1- Vermelho 2- Verde 3- Amarelo 4- Azul",i,nivel+3);
         scanf("%i",&entrada);
         numero = armazenarCores[i];
-        if([numero isEqual:[NSNumber numberWithInt:entrada]])
+        if([numero isEqual:[NSNumber numberWithInt:(entrada -1)]])
         {
             NSLog(@"Acertou!");
             continue;

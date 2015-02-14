@@ -16,6 +16,7 @@
 
 @property  Genius *g;
 @property NSMutableArray *fila;
+@property Jogador *jogadorAtual;
 
 -(instancetype) initJogo;
 -(void) Update;

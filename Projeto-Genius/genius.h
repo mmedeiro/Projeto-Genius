@@ -23,6 +23,7 @@
 @property NSMutableArray *armazenarCores;
 
 -(instancetype) init;
+-(void) limpar;
 -(void) mostrarCores;
 -(BOOL) lerCores;
 
