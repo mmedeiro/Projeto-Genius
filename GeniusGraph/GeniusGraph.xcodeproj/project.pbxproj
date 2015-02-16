@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E657687D1A92200000C86717 /* UI_Game.m in Sources */ = {isa = PBXBuildFile; fileRef = E657687B1A92200000C86717 /* UI_Game.m */; };
+		E657687E1A92200000C86717 /* UI_Game.xib in Resources */ = {isa = PBXBuildFile; fileRef = E657687C1A92200000C86717 /* UI_Game.xib */; };
+		E6593C531A923E5400E4D2AC /* geniusDBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6593C4B1A923E5400E4D2AC /* geniusDBlue.jpg */; };
+		E6593C541A923E5400E4D2AC /* geniusDGreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6593C4C1A923E5400E4D2AC /* geniusDGreen.jpg */; };
+		E6593C551A923E5400E4D2AC /* geniusDRed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6593C4D1A923E5400E4D2AC /* geniusDRed.jpg */; };
+		E6593C561A923E5400E4D2AC /* geniusDYellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6593C4E1A923E5400E4D2AC /* geniusDYellow.jpg */; };
+		E6593C571A923E5400E4D2AC /* geniusKBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6593C4F1A923E5400E4D2AC /* geniusKBlue.jpg */; };
+		E6593C581A923E5400E4D2AC /* geniusKGreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6593C501A923E5400E4D2AC /* geniusKGreen.jpg */; };
+		E6593C591A923E5400E4D2AC /* geniusKRed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6593C511A923E5400E4D2AC /* geniusKRed.jpg */; };
+		E6593C5A1A923E5400E4D2AC /* geniusKYellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6593C521A923E5400E4D2AC /* geniusKYellow.jpg */; };
+		E6684CC51A90CDB900C63F4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6684CC41A90CDB900C63F4B /* AppDelegate.m */; };
+		E6684CC71A90CDB900C63F4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6684CC61A90CDB900C63F4B /* main.m */; };
+		E6684CCC1A90CDB900C63F4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6684CCB1A90CDB900C63F4B /* Images.xcassets */; };
+		E6684CCF1A90CDB900C63F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6684CCD1A90CDB900C63F4B /* Main.storyboard */; };
+		E6684CDB1A90CDB900C63F4B /* GeniusGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6684CDA1A90CDB900C63F4B /* GeniusGraphTests.m */; };
+		E6684CE61A90D2BD00C63F4B /* MyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E6684CE51A90D2BD00C63F4B /* MyWindow.m */; };
+		E6684CEA1A90D56400C63F4B /* UI_Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = E6684CE81A90D56400C63F4B /* UI_Menu.m */; };
+		E6684CEB1A90D56400C63F4B /* UI_Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6684CE91A90D56400C63F4B /* UI_Menu.xib */; };
+		E6684CED1A90E30A00C63F4B /* UI_MenuTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6684CEC1A90E30A00C63F4B /* UI_MenuTab.xib */; };
+		E6684CEF1A90E9DA00C63F4B /* UI_Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6684CEE1A90E9DA00C63F4B /* UI_Window.xib */; };
+		E6684CF31A90EFC600C63F4B /* UI_Register.m in Sources */ = {isa = PBXBuildFile; fileRef = E6684CF11A90EFC600C63F4B /* UI_Register.m */; };
+		E6684CF41A90EFC600C63F4B /* UI_Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6684CF21A90EFC600C63F4B /* UI_Register.xib */; };
+		E6CBF2571A9103F900255189 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CBF2561A9103F900255189 /* Jogador.m */; };
+		E6CBF25B1A910E6400255189 /* UI_Ranking.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CBF2591A910E6400255189 /* UI_Ranking.m */; };
+		E6CBF25C1A910E6400255189 /* UI_Ranking.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6CBF25A1A910E6400255189 /* UI_Ranking.xib */; };
+		E6CBF25F1A9110B100255189 /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CBF25E1A9110B100255189 /* Fila.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6684CD51A90CDB900C63F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6684CB61A90CDB900C63F4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6684CBD1A90CDB900C63F4B;
+			remoteInfo = GeniusGraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E657687A1A92200000C86717 /* UI_Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UI_Game.h; sourceTree = "<group>"; };
+		E657687B1A92200000C86717 /* UI_Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UI_Game.m; sourceTree = "<group>"; };
+		E657687C1A92200000C86717 /* UI_Game.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UI_Game.xib; sourceTree = "<group>"; };
+		E6593C4B1A923E5400E4D2AC /* geniusDBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = geniusDBlue.jpg; sourceTree = "<group>"; };
+		E6593C4C1A923E5400E4D2AC /* geniusDGreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = geniusDGreen.jpg; sourceTree = "<group>"; };
+		E6593C4D1A923E5400E4D2AC /* geniusDRed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = geniusDRed.jpg; sourceTree = "<group>"; };
+		E6593C4E1A923E5400E4D2AC /* geniusDYellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = geniusDYellow.jpg; sourceTree = "<group>"; };
+		E6593C4F1A923E5400E4D2AC /* geniusKBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = geniusKBlue.jpg; sourceTree = "<group>"; };
+		E6593C501A923E5400E4D2AC /* geniusKGreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = geniusKGreen.jpg; sourceTree = "<group>"; };
+		E6593C511A923E5400E4D2AC /* geniusKRed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = geniusKRed.jpg; sourceTree = "<group>"; };
+		E6593C521A923E5400E4D2AC /* geniusKYellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = geniusKYellow.jpg; sourceTree = "<group>"; };
+		E6684CBE1A90CDB900C63F4B /* GeniusGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeniusGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6684CC21A90CDB900C63F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6684CC31A90CDB900C63F4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E6684CC41A90CDB900C63F4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E6684CC61A90CDB900C63F4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6684CCB1A90CDB900C63F4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E6684CCE1A90CDB900C63F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6684CD41A90CDB900C63F4B /* GeniusGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeniusGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6684CD91A90CDB900C63F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6684CDA1A90CDB900C63F4B /* GeniusGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeniusGraphTests.m; sourceTree = "<group>"; };
+		E6684CE41A90D2BD00C63F4B /* MyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWindow.h; sourceTree = "<group>"; };
+		E6684CE51A90D2BD00C63F4B /* MyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWindow.m; sourceTree = "<group>"; };
+		E6684CE71A90D56400C63F4B /* UI_Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UI_Menu.h; sourceTree = "<group>"; };
+		E6684CE81A90D56400C63F4B /* UI_Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UI_Menu.m; sourceTree = "<group>"; };
+		E6684CE91A90D56400C63F4B /* UI_Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UI_Menu.xib; sourceTree = "<group>"; };
+		E6684CEC1A90E30A00C63F4B /* UI_MenuTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UI_MenuTab.xib; sourceTree = "<group>"; };
+		E6684CEE1A90E9DA00C63F4B /* UI_Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UI_Window.xib; sourceTree = "<group>"; };
+		E6684CF01A90EFC600C63F4B /* UI_Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UI_Register.h; sourceTree = "<group>"; };
+		E6684CF11A90EFC600C63F4B /* UI_Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UI_Register.m; sourceTree = "<group>"; };
+		E6684CF21A90EFC600C63F4B /* UI_Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UI_Register.xib; sourceTree = "<group>"; };
+		E6CBF2551A9103F900255189 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		E6CBF2561A9103F900255189 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		E6CBF2581A910E6400255189 /* UI_Ranking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UI_Ranking.h; sourceTree = "<group>"; };
+		E6CBF2591A910E6400255189 /* UI_Ranking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UI_Ranking.m; sourceTree = "<group>"; };
+		E6CBF25A1A910E6400255189 /* UI_Ranking.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UI_Ranking.xib; sourceTree = "<group>"; };
+		E6CBF25D1A9110B100255189 /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
+		E6CBF25E1A9110B100255189 /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6684CBB1A90CDB900C63F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6684CD11A90CDB900C63F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6593C4A1A923E5400E4D2AC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E6593C4B1A923E5400E4D2AC /* geniusDBlue.jpg */,
+				E6593C4C1A923E5400E4D2AC /* geniusDGreen.jpg */,
+				E6593C4D1A923E5400E4D2AC /* geniusDRed.jpg */,
+				E6593C4E1A923E5400E4D2AC /* geniusDYellow.jpg */,
+				E6593C4F1A923E5400E4D2AC /* geniusKBlue.jpg */,
+				E6593C501A923E5400E4D2AC /* geniusKGreen.jpg */,
+				E6593C511A923E5400E4D2AC /* geniusKRed.jpg */,
+				E6593C521A923E5400E4D2AC /* geniusKYellow.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E6684CB51A90CDB900C63F4B = {
+			isa = PBXGroup;
+			children = (
+				E6593C4A1A923E5400E4D2AC /* images */,
+				E6684CC01A90CDB900C63F4B /* GeniusGraph */,
+				E6684CD71A90CDB900C63F4B /* GeniusGraphTests */,
+				E6684CBF1A90CDB900C63F4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6684CBF1A90CDB900C63F4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6684CBE1A90CDB900C63F4B /* GeniusGraph.app */,
+				E6684CD41A90CDB900C63F4B /* GeniusGraphTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6684CC01A90CDB900C63F4B /* GeniusGraph */ = {
+			isa = PBXGroup;
+			children = (
+				E6684CC31A90CDB900C63F4B /* AppDelegate.h */,
+				E6684CC41A90CDB900C63F4B /* AppDelegate.m */,
+				E6684CE41A90D2BD00C63F4B /* MyWindow.h */,
+				E6684CE51A90D2BD00C63F4B /* MyWindow.m */,
+				E6CBF2551A9103F900255189 /* Jogador.h */,
+				E6CBF2561A9103F900255189 /* Jogador.m */,
+				E6684CE71A90D56400C63F4B /* UI_Menu.h */,
+				E6684CE81A90D56400C63F4B /* UI_Menu.m */,
+				E657687A1A92200000C86717 /* UI_Game.h */,
+				E657687B1A92200000C86717 /* UI_Game.m */,
+				E6684CF01A90EFC600C63F4B /* UI_Register.h */,
+				E6684CF11A90EFC600C63F4B /* UI_Register.m */,
+				E6CBF2581A910E6400255189 /* UI_Ranking.h */,
+				E6CBF2591A910E6400255189 /* UI_Ranking.m */,
+				E6CBF25D1A9110B100255189 /* Fila.h */,
+				E6CBF25E1A9110B100255189 /* Fila.m */,
+				E6684CCB1A90CDB900C63F4B /* Images.xcassets */,
+				E6684CE91A90D56400C63F4B /* UI_Menu.xib */,
+				E657687C1A92200000C86717 /* UI_Game.xib */,
+				E6684CF21A90EFC600C63F4B /* UI_Register.xib */,
+				E6CBF25A1A910E6400255189 /* UI_Ranking.xib */,
+				E6684CEC1A90E30A00C63F4B /* UI_MenuTab.xib */,
+				E6684CEE1A90E9DA00C63F4B /* UI_Window.xib */,
+				E6684CCD1A90CDB900C63F4B /* Main.storyboard */,
+				E6684CC11A90CDB900C63F4B /* Supporting Files */,
+			);
+			path = GeniusGraph;
+			sourceTree = "<group>";
+		};
+		E6684CC11A90CDB900C63F4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6684CC21A90CDB900C63F4B /* Info.plist */,
+				E6684CC61A90CDB900C63F4B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6684CD71A90CDB900C63F4B /* GeniusGraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6684CDA1A90CDB900C63F4B /* GeniusGraphTests.m */,
+				E6684CD81A90CDB900C63F4B /* Supporting Files */,
+			);
+			path = GeniusGraphTests;
+			sourceTree = "<group>";
+		};
+		E6684CD81A90CDB900C63F4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6684CD91A90CDB900C63F4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6684CBD1A90CDB900C63F4B /* GeniusGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6684CDE1A90CDB900C63F4B /* Build configuration list for PBXNativeTarget "GeniusGraph" */;
+			buildPhases = (
+				E6684CBA1A90CDB900C63F4B /* Sources */,
+				E6684CBB1A90CDB900C63F4B /* Frameworks */,
+				E6684CBC1A90CDB900C63F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeniusGraph;
+			productName = GeniusGraph;
+			productReference = E6684CBE1A90CDB900C63F4B /* GeniusGraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6684CD31A90CDB900C63F4B /* GeniusGraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6684CE11A90CDB900C63F4B /* Build configuration list for PBXNativeTarget "GeniusGraphTests" */;
+			buildPhases = (
+				E6684CD01A90CDB900C63F4B /* Sources */,
+				E6684CD11A90CDB900C63F4B /* Frameworks */,
+				E6684CD21A90CDB900C63F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6684CD61A90CDB900C63F4B /* PBXTargetDependency */,
+			);
+			name = GeniusGraphTests;
+			productName = GeniusGraphTests;
+			productReference = E6684CD41A90CDB900C63F4B /* GeniusGraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6684CB61A90CDB900C63F4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "João Vitor dos Santos Schimmelpfeng";
+				TargetAttributes = {
+					E6684CBD1A90CDB900C63F4B = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E6684CD31A90CDB900C63F4B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E6684CBD1A90CDB900C63F4B;
+					};
+				};
+			};
+			buildConfigurationList = E6684CB91A90CDB900C63F4B /* Build configuration list for PBXProject "GeniusGraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6684CB51A90CDB900C63F4B;
+			productRefGroup = E6684CBF1A90CDB900C63F4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6684CBD1A90CDB900C63F4B /* GeniusGraph */,
+				E6684CD31A90CDB900C63F4B /* GeniusGraphTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6684CBC1A90CDB900C63F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6684CF41A90EFC600C63F4B /* UI_Register.xib in Resources */,
+				E6684CCC1A90CDB900C63F4B /* Images.xcassets in Resources */,
+				E6593C5A1A923E5400E4D2AC /* geniusKYellow.jpg in Resources */,
+				E6684CEB1A90D56400C63F4B /* UI_Menu.xib in Resources */,
+				E6593C541A923E5400E4D2AC /* geniusDGreen.jpg in Resources */,
+				E657687E1A92200000C86717 /* UI_Game.xib in Resources */,
+				E6CBF25C1A910E6400255189 /* UI_Ranking.xib in Resources */,
+				E6593C571A923E5400E4D2AC /* geniusKBlue.jpg in Resources */,
+				E6684CCF1A90CDB900C63F4B /* Main.storyboard in Resources */,
+				E6593C561A923E5400E4D2AC /* geniusDYellow.jpg in Resources */,
+				E6684CEF1A90E9DA00C63F4B /* UI_Window.xib in Resources */,
+				E6593C591A923E5400E4D2AC /* geniusKRed.jpg in Resources */,
+				E6593C581A923E5400E4D2AC /* geniusKGreen.jpg in Resources */,
+				E6593C531A923E5400E4D2AC /* geniusDBlue.jpg in Resources */,
+				E6684CED1A90E30A00C63F4B /* UI_MenuTab.xib in Resources */,
+				E6593C551A923E5400E4D2AC /* geniusDRed.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6684CD21A90CDB900C63F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6684CBA1A90CDB900C63F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6684CC71A90CDB900C63F4B /* main.m in Sources */,
+				E6684CC51A90CDB900C63F4B /* AppDelegate.m in Sources */,
+				E657687D1A92200000C86717 /* UI_Game.m in Sources */,
+				E6684CEA1A90D56400C63F4B /* UI_Menu.m in Sources */,
+				E6684CF31A90EFC600C63F4B /* UI_Register.m in Sources */,
+				E6CBF25B1A910E6400255189 /* UI_Ranking.m in Sources */,
+				E6CBF25F1A9110B100255189 /* Fila.m in Sources */,
+				E6CBF2571A9103F900255189 /* Jogador.m in Sources */,
+				E6684CE61A90D2BD00C63F4B /* MyWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6684CD01A90CDB900C63F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6684CDB1A90CDB900C63F4B /* GeniusGraphTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6684CD61A90CDB900C63F4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6684CBD1A90CDB900C63F4B /* GeniusGraph */;
+			targetProxy = E6684CD51A90CDB900C63F4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6684CCD1A90CDB900C63F4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6684CCE1A90CDB900C63F4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6684CDC1A90CDB900C63F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E6684CDD1A90CDB900C63F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E6684CDF1A90CDB900C63F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GeniusGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E6684CE01A90CDB900C63F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GeniusGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E6684CE21A90CDB900C63F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GeniusGraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeniusGraph.app/Contents/MacOS/GeniusGraph";
+			};
+			name = Debug;
+		};
+		E6684CE31A90CDB900C63F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GeniusGraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeniusGraph.app/Contents/MacOS/GeniusGraph";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6684CB91A90CDB900C63F4B /* Build configuration list for PBXProject "GeniusGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6684CDC1A90CDB900C63F4B /* Debug */,
+				E6684CDD1A90CDB900C63F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6684CDE1A90CDB900C63F4B /* Build configuration list for PBXNativeTarget "GeniusGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6684CDF1A90CDB900C63F4B /* Debug */,
+				E6684CE01A90CDB900C63F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6684CE11A90CDB900C63F4B /* Build configuration list for PBXNativeTarget "GeniusGraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6684CE21A90CDB900C63F4B /* Debug */,
+				E6684CE31A90CDB900C63F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6684CB61A90CDB900C63F4B /* Project object */;
+}
