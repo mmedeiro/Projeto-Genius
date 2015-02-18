@@ -22,43 +22,40 @@
 
 
 
-@synthesize nivel, armazenarCores;
+@synthesize nivel, armazenarCores,listaLer;
 
 
 
 -(instancetype) init
 {
     nivel = 0;
-    armazenarCores = [[NSMutableArray alloc] init];
+    armazenarCores = [[Fila alloc] init];
+    listaLer = [[Fila alloc] init];
     return self;
 }
 
 -(void) limpar
 {
-    armazenarCores = [[NSMutableArray alloc] init];
+    armazenarCores = [[Fila alloc] init];
+    listaLer = [[Fila alloc] init];
     nivel = 0;
 }
 
 -(void) mostrarCores{
+
+    for (int r=0;r<nivel+3; r++)
+    {
+        NSNumber *cores = [ NSNumber numberWithInt: arc4random_uniform(3)];
+        [armazenarCores enfileirar:cores];
+    }
     
-    if([armazenarCores count] < 1)
-    {
-     for (int r=0;r<nivel+3; r++)
-     {
-        NSNumber *cores = [ NSNumber numberWithInt: arc4random_uniform(3)];
-        [armazenarCores addObject: cores];
-     }
-    }
-    else
-    {
-        NSNumber *cores = [ NSNumber numberWithInt: arc4random_uniform(3)];
-        [armazenarCores addObject: cores];
-    }
     
     NSNumber *numero;
-    for(int i = 0; i < [armazenarCores count]; i++)
+    while([armazenarCores tamanho] > 0)
     {
-        numero = [armazenarCores objectAtIndex:i];
+        numero = [armazenarCores ler];
+        [listaLer enfileirar:numero];
+        [armazenarCores desenfileirar];
         int number = [numero intValue];
         NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         switch(number)
@@ -89,17 +86,18 @@
 }
 
 -(BOOL) lerCores{
-    NSNumber *numero = armazenarCores[0];
+    NSNumber *numero = [listaLer ler];
+    NSLog(@"Log : %i",[listaLer tamanho]);
     int entrada;
-    for(int i = 0; i < [armazenarCores count]; i++)
+    while([listaLer tamanho] > 0)
     {
-        NSLog(@"Digite a combinação correta %i/%i: \n 1- Vermelho 2- Verde 3- Amarelo 4- Azul",i,nivel+3);
+        NSLog(@"Digite a combinação correta: \n 1- Vermelho 2- Verde 3- Amarelo 4- Azul");
         scanf("%i",&entrada);
-        numero = armazenarCores[i];
+        numero = [listaLer ler];
+        [listaLer desenfileirar];
         if([numero isEqual:[NSNumber numberWithInt:(entrada -1)]])
         {
             NSLog(@"Acertou!");
-            continue;
         }
         else
         {

@@ -16,5 +16,7 @@
 -(void) desenfileirar;
 -(NSObject*) ler;
 -(BOOL) vazio;
+-(int) tamanho;
+-(void) esvaziar;
 
 @end

@@ -34,6 +34,21 @@
     return [elementos firstObject];
 }
 
+-(void) esvaziar
+{
+    for(int i = 0 ; i < [self tamanho];i++)
+    {
+        [self desenfileirar];
+    }
+}
+
+
+-(int) tamanho
+{
+    return (int)[elementos count];
+}
+
+
 -(BOOL) vazio {
     if ([elementos count] == 0)
         return true;

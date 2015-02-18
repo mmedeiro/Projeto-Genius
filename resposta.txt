@@ -1,0 +1,2 @@
+O motivo de ter escolhido fila:
+No jogo temos uma lista de cores que serão mostradas ao jogador, a primeira cor a ser mostrada (a entrar na fila) é também a primeira que o jogador tem que digitar, logo a primeira a entrar é também a primeira a sair, caracterizando uma fila.

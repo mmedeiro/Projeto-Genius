@@ -14,13 +14,16 @@
 
 
 #import <Foundation/Foundation.h>
+#import "Fila.h"
+
 
 @interface Genius : NSObject
 
 
 
 @property int nivel;
-@property NSMutableArray *armazenarCores;
+@property Fila *armazenarCores;
+@property Fila *listaLer;
 
 -(instancetype) init;
 -(void) limpar;
